@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        margin: 100px;
+    }
+
+    p{
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+    td, th {
+        border: 1px solid black;
+        padding: 10px 20px;
+    }
+
+    button{
+        margin-top: 50px;
+        width: 100px;
+        height: 40px;
+    }
+</style>
+
+<body>
+    
+    <h1>Welcome to the BMI Calculator</h1>
+    <p>
+        BMI stands for Body Mass Index. It is a numerical value calculated based on a person's weight 
+        and height and is commonly used as an indicator of body fatness and potential health risks 
+        associated with weight. BMI is calculated by dividing a person's weight in kilograms by the 
+        square of their height in meters (BMI = weight in kg / (height in meters)^2). The resulting 
+        value is then used to categorize individuals into different BMI ranges, such as underweight, 
+        normal weight, overweight, and obese, providing a general assessment of their weight status and 
+        potential health implications.
+    </p>
+
+    <table style="display: block;">
+        <tr>
+            <th>BMI</th>
+            <td>Below 18.5</td>
+            <td>18.5 to 24.9</td>
+            <td>25.0 to 29.9</td>
+            <td>Above 30.0</td>
+        </tr>
+        <tr>
+            <th>Weight Status</th>
+            <td>Underweight</td>
+            <td>Healthy</td>
+            <td>Overweight</td>
+            <td>Obesity</td>
+        </tr>
+    </table>
+    
+    <form action="/calculator" method="post">
+        <button type="submit">Calculate</button>
+    </form>
+
+</body>
+</html>
