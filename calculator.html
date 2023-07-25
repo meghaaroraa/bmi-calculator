@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+</head>
+
+<style>
+
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        margin: 100px;
+    }
+
+    form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    input{
+        margin-bottom: 20px;
+        width: 200px;
+    }
+
+    button{
+        margin-top: 20px;
+        width: 100px;
+        height: 40px;
+    }
+
+</style>
+
+<body>
+    
+    <form action="/result" method="post">
+        <input type="text" name="weight" placeholder="weight in kgs">
+        <input type="text" name="height" placeholder="height in m">
+        <button type="submit" name="submit">Calculate BMI</button>
+    </form>
+
+</body>
+</html>
